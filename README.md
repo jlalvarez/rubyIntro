@@ -1,35 +1,13 @@
 Ruby Intro
 =============
 
-This 3-part homework gives some basic practice in Ruby as well as
-getting you accustomed to making testing a regular part of your workflow.
+This 3-part homework gives some basic practice in Ruby.
+We've placed "starter code" in `lib/ruby_intro.rb`; you should complete it 
+with the exercises below.
 
-It follows a fairly standard Ruby convention for codebases: the code
-files are stored in `lib/` and the test files are stored in `spec/`.
-(We use the RSpec unit-testing framework; if we were using Ruby's default
-framework, known as `Test::Unit`, the test files would be under
-`test/`.)
-
-We've placed "starter code" in `lib/ruby_intro.rb`; when you're all done, you
-can submit this single file to the autograder.
-
-However, you can test each of the 3 parts separately.  The files
-`spec/part[123]_spec.rb` contain RSpec tests for each of the three
-parts.  For example, to test your answers to Part 1, say `rspec
-spec/part1_spec.rb`.  `rspec` with no arguments runs the tests in all
-the files `spec/*_spec.rb`.
-
-* The line numbers in the RSpec error report will
-give you guidance as to which tests failed.  (You can check the [RSpec
-documentation](http://rspec.info) to see how the `.rspec` file can be
-used to customize the output format.)
-
-* If you want to be really cool, run `autotest`.  This will run all the
-tests in `spec/`, but every time you edit and save your code file, the
-tests are automatically re-run, so you don't have to run them manually.
-As we'll see later, this is the first step to TDD or test-driven
-development: write the tests before you write the code, watch the test
-fail, fill in the code and save the code file, then watch the test pass!
+You can test each of the 3 parts separately; for example, to test your answers 
+to Part 1, run `rspec spec/part1_spec.rb`.  `rspec` with no arguments runs the
+tests in all the files.
 
 
 # 1. Arrays, Hashes, and Enumerables
@@ -44,8 +22,7 @@ exercises. :-)
 
 0. Define a method `sum_to_n?(array, n)` that takes an array of integers and an additional integer, n, as arguments and returns true if any two elements in the array of integers sum to n. An empty array should sum to zero by definition.
 
-You can check your progress by running `rspec spec/part1_spec.rb`, or
-just running `autotest` and leaving it running.
+You can check your progress by running `rspec spec/part1_spec.rb`.
 
 # 2. Strings and Regular Expressions
 
